@@ -363,7 +363,7 @@ namespace BetterPartyFinder {
 
             if (ImGui.BeginChild("duty-selection", new Vector2(-1f, -1f))) {
                 var duties = this.Plugin.DataManager.GetExcelSheet<ContentFinderCondition>()!
-                    .Where(cf => cf.Unknown30)
+                    .Where(cf => cf.Unknown29)
                     .Where(cf => AllowedContentTypes.Contains(cf.ContentType.Row));
 
                 var searchQuery = this.DutySearchQuery.Trim();
